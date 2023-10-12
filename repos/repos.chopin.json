@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Chopin_KernelSU_Proton",
-      "repo": "https://github.com/AOSP-13-Mediatek/kernel_xiaomi_chopin",
-      "branch": "r",
-      "device": "chopin",
-      "defconfig": "chopin_user_defconfig"
+      "name": "android_kernel_samsung",
+      "repo": "https://github.com/huangkaikaihuang/android_kernel_samsung_d2xq",
+      "branch": "N9760ZCS3DTJ1",
+      "device": "d2xq",
+      "defconfig": "d2xq_chn_open_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
