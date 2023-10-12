@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "android_kernel_samsung",
-      "repo": "https://github.com/huangkaikaihuang/android_kernel_samsung_d2xq",
-      "branch": "N9760ZCS3DTJ1",
+      "repo": "https://github.com/huangkaikaihuang/sanxingnote10",
+      "branch": "main",
       "device": "d2xq",
       "defconfig": "d2xq_chn_open_defconfig"
     },
