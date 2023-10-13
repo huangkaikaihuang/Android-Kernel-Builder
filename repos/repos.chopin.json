@@ -14,8 +14,8 @@
         "branch": "master",
         "name": "google",
         "binPath": [
-          "llvm-arm-toolchain-ship/8.0.11/bin",
-          "gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin"
+          "google/llvm-arm-toolchain-ship/8.0.11/bin",
+          "google/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin"
         ]
       }
     ],
