@@ -10,7 +10,7 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/kdrag0n/proton-clang",
+        "repo": "https://github.com/proprietary-stuff/llvm-arm-toolchain-ship-10.0",
         "branch": "master",
         "name": "proton-clang",
         "binPath": ["./bin"]
