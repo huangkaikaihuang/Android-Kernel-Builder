@@ -12,7 +12,7 @@
       {
         "repo": "https://github.com/CruelKernel/samsung-exynos9820-toolchain/",
         "branch": "samsung",
-        "name": "samsung",
+        "name": "google",
         "binPath": [
           "clang/host/linux-x86/clang-r349610-jopp/bin",
           "gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin"
