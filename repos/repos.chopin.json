@@ -10,37 +10,35 @@
     "withKernelSU": false,google
     "toolchains": [
       {
-        "repo": "https://github.com/mentalmuso/android_toolchain_samsung",
+        "repo": "https://github.com/kdrag0n/proton-clang",
         "branch": "master",
-        "name": "google",
-        "binPath": [
-          "google/llvm-arm-toolchain-ship/8.0.11/bin",
-          "google/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin"
-        ]
+        "name": "proton-clang",
+        "binPath": ["bin"]
       }
     ],
+    "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "google/llvm/bin/clang",
+      "CC": "proton-clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "google/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-",
-        "CLANG_TRIPLE": "google/llvm-arm-toolchain-ship/8.0.11/bin/aarch64-linux-android-",
-        "LD": "google/llvm-arm-toolchain-ship/8.0.11/bin/ld.lld",
-        "AR": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-ar",
-        "NM": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-nm",
-        "OBJCOPY": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-objcopy",
-        "OBJDUMP": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-objdump",
-        "READELF": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-readelf",
-        "OBJSIZE": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-size",
-        "STRIP": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-strip",
-        "LDGOLD": "google/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld.gold",
-        "LLVM_AR": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-ar",
-        "LLVM_DIS": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-dis"
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
+        "LD": "proton-clang/bin/ld.lld",
+        "AR": "proton-clang/bin/llvm-ar",
+        "NM": "proton-clang/bin/llvm-nm",
+        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
+        "OBJDUMP": "proton-clang/bin/llvm-objdump",
+        "READELF": "proton-clang/bin/llvm-readelf",
+        "OBJSIZE": "proton-clang/bin/llvm-size",
+        "STRIP": "proton-clang/bin/llvm-strip",
+        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "proton-clang/bin/llvm-ar",
+        "LLVM_DIS": "proton-clang/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
-      "use": false,
-      "release": true,
+      "use": true,
+      "release": false,
       "repo": "https://github.com/easterNday/AnyKernel3/",
       "branch": "thyme"
     }
