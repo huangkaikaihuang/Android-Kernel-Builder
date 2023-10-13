@@ -7,16 +7,16 @@
       "device": "d2xq",
       "defconfig": "d2xq_chn_open_defconfig"
     },
-    "withKernelSU": false,google
+    "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
+        "repo": "https://github.com/iamimmanuelraj/toolchain_samsung_SM_S901E",
+        "branch": "mail",
         "name": "proton-clang",
         "binPath": ["bin"]
       }
     ],
-    "ccache": true,
+    "ccache": false,
     "params": {
       "ARCH": "arm64",
       "CC": "proton-clang/bin/clang",
