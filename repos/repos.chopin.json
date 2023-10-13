@@ -10,12 +10,12 @@
     "withKernelSU": false,google
     "toolchains": [
       {
-        "repo": "https://github.com/CruelKernel/samsung-exynos9820-toolchain/",
-        "branch": "google",
+        "repo": "https://github.com/mentalmuso/android_toolchain_samsung",
+        "branch": "master",
         "name": "google",
         "binPath": [
-          "clang/host/linux-x86/clang-r349610-jopp/bin",
-          "gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin"
+          "llvm-arm-toolchain-ship/8.0.11/bin",
+          "gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin"
         ]
       }
     ],
@@ -23,19 +23,19 @@
       "ARCH": "arm64",
       "CC": "google/llvm/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "google/aarch64-linux-android-4.9/bin/aarch64-linux-android-",
-        "CLANG_TRIPLE": "google/llvm/bin/aarch64-linux-android-",
-        "LD": "google/llvm/bin/ld.lld",
-        "AR": "google/llvm/bin/llvm-ar",
-        "NM": "google/llvm/bin/llvm-nm",
-        "OBJCOPY": "google/llvm/bin/llvm-objcopy",
-        "OBJDUMP": "google/llvm/bin/llvm-objdump",
-        "READELF": "google/llvm/bin/llvm-readelf",
-        "OBJSIZE": "google/llvm/bin/llvm-size",
-        "STRIP": "google/llvm/bin/llvm-strip",
-        "LDGOLD": "google/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld.gold",
-        "LLVM_AR": "google/llvm/bin/llvm-ar",
-        "LLVM_DIS": "google/llvm/bin/llvm-dis"
+        "CROSS_COMPILE": "google/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-",
+        "CLANG_TRIPLE": "google/llvm-arm-toolchain-ship/8.0.11/bin/aarch64-linux-android-",
+        "LD": "google/llvm-arm-toolchain-ship/8.0.11/bin/ld.lld",
+        "AR": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-ar",
+        "NM": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-nm",
+        "OBJCOPY": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-objcopy",
+        "OBJDUMP": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-objdump",
+        "READELF": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-readelf",
+        "OBJSIZE": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-size",
+        "STRIP": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-strip",
+        "LDGOLD": "google/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld.gold",
+        "LLVM_AR": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-ar",
+        "LLVM_DIS": "google/llvm-arm-toolchain-ship/8.0.11/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
