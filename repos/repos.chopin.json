@@ -7,11 +7,11 @@
       "device": "d2xq",
       "defconfig": "d2xq_chn_open_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": false,google
     "toolchains": [
       {
         "repo": "https://github.com/CruelKernel/samsung-exynos9820-toolchain/",
-        "branch": "samsung",
+        "branch": "google",
         "name": "google",
         "binPath": [
           "clang/host/linux-x86/clang-r349610-jopp/bin",
