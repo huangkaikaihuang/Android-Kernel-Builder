@@ -7,31 +7,34 @@
       "device": "d2xq",
       "defconfig": "d2xq_chn_open_defconfig"
     },
-  "withKernelSU": true,
-  "toolchains": [
-    {
-      "repo": "https://github.com/proprietary-stuff/llvm-arm-toolchain-ship-10.0",
-      "branch": "master",
-      "name": "proton-clang",
-      "binPath": ["bin"]
-    },
-    {
-      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/tags/android-12.1.0_r27.tar.gz",
-      "name": "gcc",
-      "binPath": ["bin"]
-    }
-  ],
+
+    "withKernelSU": false,
+    "toolchains": [
+      {
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "name": "proton-clang",
+        "binPath": ["./bin"]
+      }
+    ],
     "ccache": true,
     "params": {
       "ARCH": "arm64",
       "CC": "proton-clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "gcc/bin/aarch64-linux-gnu-"
-        "CONFIG_BUILD_ARM64_DT_OVERLAY":"y"
-        "CONFIG_BUILD_ARM64_DT_OVERLAY":"y"
-        "CLANG_TRIPLE":"aarch64-linux-gnu-"
-        "DTC_EXT":"/tools/dtc"
-        
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
+        "LD": "proton-clang/bin/ld.lld",
+        "AR": "proton-clang/bin/llvm-ar",
+        "NM": "proton-clang/bin/llvm-nm",
+        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
+        "OBJDUMP": "proton-clang/bin/llvm-objdump",
+        "READELF": "proton-clang/bin/llvm-readelf",
+        "OBJSIZE": "proton-clang/bin/llvm-size",
+        "STRIP": "proton-clang/bin/llvm-strip",
+        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "proton-clang/bin/llvm-ar",
+        "LLVM_DIS": "proton-clang/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
