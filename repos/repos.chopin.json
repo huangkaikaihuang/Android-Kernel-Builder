@@ -26,7 +26,12 @@
       "ARCH": "arm64",
       "CC": "proton-clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "gcc/bin/aarch64-linux-gnu-"
+        "CROSS_COMPILE": "gcc/bin/aarch64-linux-gnu-"，
+        "CONFIG_BUILD_ARM64_DT_OVERLAY":"y"，
+        "CONFIG_BUILD_ARM64_DT_OVERLAY":"y"，
+        "CLANG_TRIPLE":"aarch64-linux-gnu-"，
+        "DTC_EXT":"/tools/dtc"
+        
       }
     },
     "AnyKernel3": {
