@@ -2,13 +2,13 @@
   {
     "kernelSource": {
       "name": "android_kernel_samsung",
-      "repo": "https://github.com/huangkaikaihuang/sanxingnote10",
+      "repo": "https://github.com/huangkaikaihuang/kernelsu_sanxingnote10",
       "branch": "main",
       "device": "d2xq",
       "defconfig": "d2xq_chn_open_defconfig"
     },
 
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
