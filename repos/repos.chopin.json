@@ -8,7 +8,7 @@
       "defconfig": "d2xq_chn_open_defconfig"
     },
 
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
