@@ -3,13 +3,13 @@
   {
     "kernelSource": {
       "name": "android_kernel_samsung_exynos9820",
-      "repo": "https://github.com/CruelKernel/samsung-exynos9820",
-      "branch": "cruel-HVJ5-v5.3",
-      "device": "d1xks",
-      "defconfig": "exynos9820-d1xks_defconfig"
+      "repo": "https://github.com/huangkaikaihuang/android_kernel_samsung_exynos9820",
+      "branch": "lineage-20",
+      "device": "d1",
+      "defconfig": "exynos9820-d1_defconfig"
     },
 
-    "withKernelSU": true,
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
