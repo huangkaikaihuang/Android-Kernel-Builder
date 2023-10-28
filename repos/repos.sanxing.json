@@ -1,11 +1,12 @@
+
 [
   {
     "kernelSource": {
-      "name": "android_kernel_samsungs8",
-      "repo": "https://github.com/huangkaikaihuang/G9500ZCS6DUD1-",
-      "branch": "main",
-      "device": "dreamqlte",
-      "defconfig": "dreamqlte_chn_open_defconfig"
+      "name": "android_kernel_samsung_exynos9820",
+      "repo": "https://github.com/huangkaikaihuang/android_kernel_samsung_exynos9820",
+      "branch": "lineage-20",
+      "device": "exynos9820-d2x_defconfig",
+      "defconfig": "exynos9820-d2x_defconfig"
     },
 
     "withKernelSU": false,
