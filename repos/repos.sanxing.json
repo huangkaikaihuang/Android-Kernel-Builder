@@ -5,8 +5,8 @@
       "name": "android_kernel_samsung_exynos9820",
       "repo": "https://github.com/huangkaikaihuang/android_kernel_samsung_exynos9820",
       "branch": "lineage-20",
-      "device": "exynos9820-d2x_defconfig",
-      "defconfig": "exynos9820-d2x_defconfig"
+      "device": "Exynos9820-f62",
+      "defconfig": "Exynos9820-f62_defconfig"
     },
 
     "withKernelSU": false,
