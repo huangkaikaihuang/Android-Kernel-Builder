@@ -5,7 +5,7 @@
       "name": "android_kernel_samsung_exynos9820",
       "repo": "https://github.com/ThunderStorms21th/S10-source",
       "branch": "master",
-      "device": "d1xks",
+      "device": "N971N",
       "defconfig": "exynos9820-d1xks_defconfig"
     },
 
