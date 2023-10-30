@@ -3,8 +3,8 @@
   {
     "kernelSource": {
       "name": "android_kernel_samsung_exynos9820",
-      "repo": "https://github.com/ThunderStorms21th/S10-source",
-      "branch": "master",
+      "repo": "https://github.com/eudximoniiadev/samsung-exynos9825",
+      "branch": "main",
       "device": "N971N",
       "defconfig": "exynos9820-d1xks_defconfig"
     },
