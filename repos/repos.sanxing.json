@@ -3,8 +3,8 @@
   {
     "kernelSource": {
       "name": "android_kernel_samsung_exynos9820",
-      "repo": "https://github.com/eudximoniiadev/samsung-exynos9825",
-      "branch": "main",
+      "repo": "https://github.com/huangkaikaihuang/android_kernel_samsung_exynos9820_d1x",
+      "branch": "lineage-20",
       "device": "N971N",
       "defconfig": "exynos9820-d1xks_defconfig"
     },
